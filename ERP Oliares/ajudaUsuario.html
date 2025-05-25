@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Uso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="ajuda.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        h1, h3 {
+            color: #007bff;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Guia de Uso</h1>
+        <br><br>
+        <section>
+            <h3><i class="fas fa-edit"></i> Preencha os Campos:</h3>
+            <p>Preencha os campos conforme as indicações, fornecendo as informações necessárias para garantir um registro preciso. Por favor, note que para efetuar o cadastro, é essencial que tanto o nome de usuário (login) quanto a senha ainda não existam no sistema. Certifique-se de criar uma senha robusta, contendo uma combinação de letras, números e símbolos para garantir a segurança da sua conta.</p>
+        </section>
+
+        <section>
+            <h3><i class="fas fa-save"></i> Clique em "Gravar":</h3>
+            <p>Após preencher os campos, clique no botão "Gravar" para adicionar uma nova entrada. </p>
+            <img src="img/usuarioCadastro.png" >
+        </section>
+
+        <section>
+            <h3><i class="fas fa-trash-alt"></i> Exclua um Usuario:</h3>
+            <p>Se necessário, utilize o botão "Excluir" para remover um usuario. Confirme a ação quando solicitado.</p>
+            <img src="img/excluir.png" >
+        </section>
+
+        <section>
+            <h3><i class="fas fa-arrow-left"></i> Volte à Página Inicial:</h3>
+            <p>Retorne à página inicial a qualquer momento clicando no botão "Voltar".</p>
+            <img src="img/voltar.png" >
+        </section>
+
+        <h4>Informamos que estamos disponíveis para esclarecer quaisquer dúvidas ou fornecer assistência adicional. Entre em contato conosco através do e-mail: <a href="mailto:equipeoliares@gmail.com">equipeoliares@gmail.com</a>. Estamos aqui para ajudar.</h4>
+
+        <!-- Botão de Voltar -->
+        <button onclick="window.history.back()"><i class="fas fa-arrow-left"></i> Voltar</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

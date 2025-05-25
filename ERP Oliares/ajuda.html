@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Uso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="ajuda.css">
+    <style>
+        body {
+            font-family: 'Roboto';
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        h1, h3{
+            color: #007bff;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Guia de Uso</h1>
+        <br><br>
+        <section>
+            <h3><i class="fas fa-edit"></i> Preencha os Campos:</h3>
+            <p>"Preencha os campos conforme as indicações, inserindo as informações necessárias nos espaços correspondentes para garantir um registro preciso."</p>
+        </section>
+
+        <section>
+            <h3><i class="fas fa-save"></i> Clique em "Gravar" ou "Alterar":</h3>
+            <p>Após preencher os campos, clique no botão "Gravar" para adicionar uma nova entrada. Se precisar fazer alterações, utilize o botão "Alterar".</p>
+            <img src="img/gravaaltera.png" alt="Descrição da imagem">
+        </section>
+
+        <section>
+            <h3><i class="fas fa-trash-alt"></i> Exclua uma Entrada:</h3>
+            <p>Se necessário, utilize o botão "Excluir" para remover uma entrada. Confirme a ação quando solicitado.</p>
+            <img src="img/excluir.png" alt="Descrição da imagem">
+        </section>
+
+        <section>
+            <h3><i class="fas fa-arrow-left"></i> Volte à Página Inicial:</h3>
+            <p>Retorne à página inicial a qualquer momento clicando no botão "Voltar".</p>
+            <img src="img/voltar.png" alt="Descrição da imagem">
+        </section>
+
+        <h4>Informamos que estamos disponíveis para esclarecer quaisquer dúvidas ou fornecer assistência adicional. Entre em contato conosco através do e-mail:  <a href="mailto:oliaresequipe@gmail.com">equipeoliares@gmail.com</a>. Estamos aqui para ajudar.</h4>
+
+        <!-- Botão de Voltar -->
+        <button onclick="goBack()"><i class="fas fa-arrow-left"></i> Voltar</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
+
+
+
+
